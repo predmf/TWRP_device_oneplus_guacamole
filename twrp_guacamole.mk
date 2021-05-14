@@ -11,11 +11,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from guacamole device
 $(call inherit-product, device/oneplus/guacamole/device.mk)
 
-# Inherit some common YAAP stuff.
-$(call inherit-product, vendor/yaap/config/common_full_phone.mk)
+# Inherit some common TWRP stuff.
+$(call inherit-product, vendor/twrp/config/common.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := yaap_guacamole
+PRODUCT_NAME := twrp_guacamole
 PRODUCT_DEVICE := guacamole
 PRODUCT_BRAND := OnePlus
 PRODUCT_MODEL := GM1917
@@ -30,6 +30,20 @@ PRODUCT_CHARACTERISTICS := nosdcard
 
 # Boot animation
 scr_resolution := 1440
+
+# Build info and overrides
+BUILD_FINGERPRINT := "OnePlus/OnePlus7Pro/OnePlus7Pro:11/RKQ1.201022.002/2202112154:user/release-keys"
+
+PRODUCT_OVERRIDE_INFO := true
+PRODUCT_OVERRIDE_FINGERPRINT := google/coral/coral:12/SP2A.220305.012/8177914:user/release-keys
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    TARGET_DEVICE=OnePlus7Pro \
+    TARGET_NAME=OnePlus7Pro
+
+PRODUCT_GMS_CLIENTID_BASE := android-oneplus
+
+# Boot animation screen size
 TARGET_SCREEN_HEIGHT := 3120
 TARGET_SCREEN_WIDTH := 1440
 

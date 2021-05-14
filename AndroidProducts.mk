@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/yaap_guacamole.mk
+    $(LOCAL_DIR)/twrp_guacamole.mk
 
 COMMON_LUNCH_CHOICES := \
-	yaap_guacamole-user \
-	yaap_guacamole-userdebug \
-	yaap_guacamole-eng
+    twrp_guacamole-user \
+    twrp_guacamole-userdebug \
+    twrp_guacamole-eng
