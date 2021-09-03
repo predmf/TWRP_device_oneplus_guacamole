@@ -9,14 +9,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit from guacamole device
-$(call inherit-product, device/oneplus/guacamole/device.mk)
+$(call inherit-product, device/oneplus/guacamolev2/device.mk)
 
 # Inherit some common TWRP stuff.
 $(call inherit-product, vendor/twrp/config/common.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := twrp_guacamole
-PRODUCT_DEVICE := guacamole
+PRODUCT_NAME := twrp_guacamolev2
+PRODUCT_DEVICE := guacamolev2
 PRODUCT_BRAND := OnePlus
 PRODUCT_MODEL := GM1917
 PRODUCT_MANUFACTURER := OnePlus

@@ -6,7 +6,7 @@
 -include device/oneplus/sm8150-common/BoardConfigCommon.mk
 
 BOARD_VENDOR := oneplus
-DEVICE_PATH := device/oneplus/guacamole
+DEVICE_PATH := device/oneplus/guacamolev2
 
 # Display
 TARGET_SCREEN_DENSITY := 560
@@ -16,7 +16,7 @@ TARGET_SCREEN_DENSITY := 560
 # TARGET_RECOVERY_DEVICE_MODULES := libinit_guacamole
 
 # Kernel
-TARGET_KERNEL_CONFIG := vendor/sm8150-perf_defconfig
+TARGET_KERNEL_CONFIG := vendor/sm8150-perf-v2_defconfig
 
 # Partitions
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
